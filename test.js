@@ -219,54 +219,101 @@ window.alert("Grade:", grade);
 //******************************** Using switch case*******************************
 
 //15- Write a program to print total number of days in month
-  var days;
-
-  switch (month) {
-    case 1: // January
-    case 3: // March
-    case 5: // May
-    case 7: // July
-    case 8: // August
-    case 10: // October
-    case 12: // December
-      days = 31;
-      break;
-    case 4: // April
-    case 6: // June
-    case 9: // September
-    case 11: // November
-      days = 30;
-      break;
-    case 2: // February
-      days = year % 4 !== 0 || (year % 100 === 0 && year % 400 !== 0) ? 28 : 29; // Consider leap years
-      break;
-    default:
-      days = null;
-  }
-
-  return days;
-}
-
-// Example usage
-const month = 2; // February
-const year = 2024; // Leap year for demonstration
-const days = daysInMonth(month, year);
-if (days !== null) {
-  console.log(`Number of days in month ${month} of year ${year} is ${days}.`);
-} else {
-  console.log("Invalid month input.");
-}
-
-
+ /*var monthNumber = parseInt(window.prompt("Enter the month number (1-12):"));
+ switch (monthNumber) {
+   case 1:
+     window.alert("January has 31 days.");
+     break;
+   case 2:
+     window.alert("February has 28 or 29 days depending on the year.");
+     break;
+   case 3:
+     window.alert("March has 31 days.");
+     break;
+   case 4:
+     window.alert("April has 30 days.");
+     break;
+   case 5:
+     window.alert("May has 31 days.");
+     break;
+   case 6:
+     window.alert("June has 30 days.");
+     break;
+   case 7:
+     window.alert("July has 31 days.");
+     break;
+   case 8:
+     window.alert("August has 31 days.");
+     break;
+   case 9:
+     window.alert("September has 30 days.");
+     break;
+   case 10:
+     window.alert("October has 31 days.");
+     break;
+   case 11:
+     window.alert("November has 30 days.");
+     break;
+   case 12:
+     window.alert("December has 31 days.");
+     break;
+   default:
+     window.alert(
+       "Invalid month number. Please enter a number between 1 and 12."
+     );
+ }
+*/
 //16- Write a program to check whether an alphabet is vowel or consonant
 
+/*var character = prompt("Enter a character:").toLowerCase();
+switch (character) {
+  case "a":
+  case "e":
+  case "i":
+  case "o":
+  case "u":
+    window.alert("Vowel");
+    break;
+  default:
+    window.alert("Consonant");
+    break;
+}
+*/
 
 //17- Write a program to find maximum between two numbers
+/*var num1 = Number(window.prompt("Enter the first number:"));
+var num2 = Number(window.prompt("Enter the second number:"));
+var max;
 
-
+switch (true) {
+  case num1 > num2:
+    max = num1;
+    window.alert("The maximum number is: " + max);
+    break;
+  //(fules)
+  case num2 > num1:
+    max = num2;
+    window.alert("The maximum number is: " + max);
+    break;
+  default:
+    window.alert("Both numbers are equal.");
+}
+*/
 
 //18- Write a program to check whether a number is even or odd
-
+/*var number = parseInt(window.prompt("Enter a number:"));
+switch (number % 2) {
+  case 0:
+    window.alert(number + " is even.");
+    break;
+  case 1:
+  case -1:
+    window.alert(number + " is odd.");
+    break;
+  default:
+    window.alert("Invalid input. Please enter a valid number.");
+}
+*/
 
 //19- Write a program to check whether a number is positive or negative or zero
 
