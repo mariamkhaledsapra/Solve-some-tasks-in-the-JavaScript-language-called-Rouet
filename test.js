@@ -316,7 +316,51 @@ switch (number % 2) {
 */
 
 //19- Write a program to check whether a number is positive or negative or zero
+/*var number =window.prompt("Enter a number:");
+switch (Number) {
+  case 1:
+    window.alert(number + " is positive.");
+    break;
+  case -1:
+    window.alert(number + " is negative.");
+    break;
+  case 0:
+      window.alert("0 is zero.");
+    break;
+  default:
+    window.alert("Please enter a valid number.");
+}
+*/
 
 
 //20- Write a program to create Simple Calculator
+var num1 = Number(window.prompt("Enter the first number:"));
+var operator = window.prompt("Enter the operator (+ , - , * , / ):");
+var num2 = Number(window.prompt("Enter the second number:"));
+var result;
+
+switch (operator) {
+  case "+":
+    result = num1 + num2;
+    break;
+  case "-":
+    result = num1 - num2;
+    break;
+  case "*":
+    result = num1 * num2;
+    break;
+  case "/":
+    if (num2 !== 0) {
+      result = num1 / num2;
+    } else {
+      window.alert("Division by zero is not allowed.");
+      result = null;
+    }
+    break;
+  
+  default:
+    window.alert("Invalid operator.");
+    result = null;
+}
+  window.alert("Result: " + result);
 
